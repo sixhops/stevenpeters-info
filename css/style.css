@@ -1,0 +1,147 @@
+@import 'https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911';
+
+/* begin Bootstrap override section */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+/* end Bootstrap override section */
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  margin: 1em;
+}
+
+body {
+  padding-top: 50px;
+  background-image: url("http://www.quality3dmodels.net/textures/texture_demo/1745540063-bear.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.resume {
+  /* background-color: #c3c3c3; */
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.maintitle {
+  font-size: 12rem;
+  width: 40%;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #c4c4c4;
+}
+
+.beartext {
+  display: inline-block;
+  font-color: #999;
+}
+
+.bio {
+  font-size: 1.5em;
+  color: #c3c3c3;
+  /*padding: 0.65em;*/
+  width: 75%;
+  margin: auto; /* I'm using bootstrap's text-center so why is this necessary? */
+}
+
+.skillbox {
+  background-color: #222;
+  opacity: 0.85;
+  width: 80%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  padding: 2em;
+}
+
+.logobox {
+  background-color: #fff;
+  margin-top: 1.6em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  opacity: 1;
+}
+
+.logobox img {
+  /* I think this section needs cleanup */
+  width: 80%;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.portfolio {
+  background-color: #fff;
+}
+
+#seattlebmxbox {
+  /*
+  padding: 1em;
+  margin: 1em;
+  */
+}
+
+#seattlebmximagebox {
+  background-image: url("http://seattlebmx.bike/images/chalkboard.png");
+  background-position: center;
+  padding: 1em;
+  /*margin: 1em;*/
+}
+
+#bahiainmotionbox {
+  /*padding: 1em;*/
+}
+
+#bahiainmotionbox img {
+  height: 14em;
+}
+
+#balanceseattlebox {
+  /*padding: 1em;*/
+}
+
+#balanceseattlebox img {
+  border: 2em solid #ccc;
+}
+
+.sitedescription {
+  font-size: 1em;
+}
+
+.contactheader {
+  color: #fff;
+}
+
+.socnetrow {
+  background-color: #fff;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+.socneticon {
+  
+}
+
+.facebooklogo {
+  margin: 1.9em;
+  max-height: 8em;
+}
