@@ -3,3 +3,25 @@ html, body {
   padding:0;
 }
 
+#buttons {
+  width: 90%;
+  margin: auto;
+  padding: 0.25em;
+}
+
+#imagebox {
+  width: 90%;
+  margin: auto;
+}
+
+#itemimages img {
+  float: left;
+  margin: 1em;
+  width: 6em;
+}
+
+input {
+  font-size: 2em;
+  width: 100%;
+  padding: 0.3em;
+}
