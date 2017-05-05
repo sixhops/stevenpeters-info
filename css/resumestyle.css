@@ -8,6 +8,11 @@ h1 {
   font-family: 'Goudy Bookletter 1911', serif;
   color: #000;
 }
+h2 {
+  font-size: 3rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #000;
+}
 
 p {
   font-size: 1.4rem;
