@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -27,13 +27,22 @@
     	var thisScrollTop = 0;
     	var delta = 0;
 
+      var listitems = document.getElementsByClassName("staggeredlist");
+      var left = 1;
+
     	$(document).ready(function() {
   			$(window).scroll(function() {
     			thisScrollTop = $(window).scrollTop();
     			delta = thisScrollTop - lastScrollTop;
     			$(".parallax").css({ 'transform' : 'translateY(' + (delta / 2.5) + 'px)' });
   			});
-		});
+
+        for (var i = 0; i < listitems.length; i++) {
+          listitems[i].style.left = left + "px";
+          left += 10;
+        }
+		  });
+
     </script>
 
 
@@ -49,64 +58,58 @@
     <div class="container-fluid">
 
     	<div class="row">
-			<h1 class="text-center parallax">steven peters</h1>
-			<p class="text-center parallax">
-				<i class="fa fa-lg fa-github" aria-hidden="true"></i>
-				<i class="fa fa-lg fa-codepen" aria-hidden="true"></i>
-				<i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i>
-				<i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i>
-				<i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
-			</p>
+        <div class="col-xs-12">
+    			<h1 class="text-center parallax">steven peters</h1>
+    			<p class="text-center parallax">
+    				<i class="fa fa-lg fa-github" aria-hidden="true"></i>
+    				<i class="fa fa-lg fa-codepen" aria-hidden="true"></i>
+    				<i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i>
+    				<i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i>
+    				<i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
+    			</p>
+        </div>
     	</div>
 
-		<div class="row">
-			<div class="col-xs-1"><p></p></div>
-			<div class="container col-xs-10 skillbox">
-		    	<p class="bio">Steven Peters is a web developer with 15 years experience in the industry. He brings a rare mix of artistic creativity and efficient technicality to all of his projects while never sacrificing his focus on user experience.</p>
+  		<div class="row">
+  			<div class="col-xs-1 col-md-2"><p></p></div>
+  			<div class="col-xs-10 col-md-8">
+          <div class="description">
+  		      <p class="bio">Steven Peters is a web developer with 15 years experience in the industry. He brings a rare mix of artistic creativity and efficient technicality to all of his projects while never sacrificing his focus on user experience.</p>
+          </div>
+  			</div>
+  			<div class="col-xs-1 col-md-2"><p></p></div>
+  		</div>
 
-		    	<div class="logobox">
-		    		<div class="row">
-		        		<div class="col-xs-4">
-		        			<p>HTML/CSS</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>Javascript</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>jQuery</p>
-		        		</div>
-		    		</div>
-		    		<div class="row">
-		        		<div class="col-xs-4">
-		        			<p>Bootstrap</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>AngularJS</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>WordPress</p>
-		        		</div>
-		    		</div>
-		    		<div class="row">
-		        		
-		    		</div>
-		    		<div class="row">
-		        		<div class="col-xs-4">
-		        			<p>BLah</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>Blah</p>
-		        		</div>
-		        		<div class="col-xs-4">
-		        			<p>Blah</p>
-		        		</div>
-		    		</div>
-		    	</div>
+    </div>
 
-			</div>
-			<div class="col-xs-1"><p></p></div>
-		</div>
+    <div class="container-fluid skillbox">
+      <div class="row">
+          <div class="hidden-xs col-md-3"><p></p></div>
+          <div class="col-xs-12 col-md-6 skilllistdiv">
+            <ul>
+              <li class="staggeredlist">Front-end Web Development (HTML/CSS/JS)</li>
+              <li class="staggeredlist">Diverse language experience (C#, Java, C++, etc.)</li>
+              <li class="staggeredlist">Experience managing every phase of software development</li>
+              <li class="staggeredlist">Exceptional communication skills</li>
+              <li class="staggeredlist">Experienced trainer in audio, video and classroom environments</li>
+            </ul>
+          </div>
+          <div class="hidden-xs col-md-3"><p></p></div>
+      </div>
+    </div>
 
+    <div class="container-fluid resumes">
+      <div class="row">
+        <div class="hidden-xs col-md-2"><p></p></div>
+        <div class="col-xs-6 col-md-3">
+          <div class="resumelink"><p>Download my resume file (.doc)</p></div>
+        </div>
+        <div class="hidden-xs col-md-2"><p></p></div>
+        <div class="col-xs-6 col-md-3">
+          <div class="resumelink"><p>View my expanded resume online</p></div>
+        </div>
+        <div class="hidden-xs col-md-2"><p></p></div>
+      </div>
     </div>
 
     <a id="portfolio"></a>
@@ -114,7 +117,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center">Websites I've Made:</h1>
+          <h2 class="text-center">portfolio</h2>
         </div>
       </div>
 
@@ -132,47 +135,13 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div id="seattlebmxbox">
-            <div id="seattlebmximagebox">
-              <img class="img-responsive center-block" src="http://seattlebmx.bike/images/mainlogo.png">
-              <p class="text-center sitedescription">Another handcoded HTML and CSS solution for a local BMX shop.</p>
-            </div>
+          <div id="cullengraymusicbox">
+            <img class="img-responsive center-block" src="http://seattlebmx.bike/images/mainlogo.png">
+            <p class="text-center sitedescription">Another handcoded HTML and CSS solution for an artist's first album.</p>
           </div>
         </div>
       </div>
     </div>
-
-    <a id="contact"></a>
-    <div class="container contact">
-      <h1 class="text-center contactheader">Get social with beardog:</h1>
-      <div class="row socnetrow">
-        <div class="col-md-2 socneticon">
-          <img class="img-responsive facebooklogo" src="https://image.freepik.com/free-icon/facebook-letter-logo_318-40258.jpg">
-        </div>
-        <div class="col-md-2 socneticon">
-          <img class="img-responsive" src="https://cdn1.iconfinder.com/data/icons/simple-icons/2048/twitter-2048-black.png">
-        </div>
-        <div class="col-md-2 socneticon">
-          <a href="https://github.com/sixhops">
-            <img class="img-responsive" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
-          </a>
-        </div>
-        <div class="col-md-2 socneticon">
-          <a href="http://codepen.io/sixhops/">
-            <img class="img-responsive" src="http://www.fancyicons.com/free-icons/222/simple/png/256/codepen_256.png">
-          </a>
-        </div>
-        <div class="col-md-2 socneticon">
-          <img class="img-responsive" src="http://vectorlogofree.com/wp-content/uploads/2014/03/51885-jsfiddle-logo-icon-vector-icon-vector-eps.png">
-        </div>
-        <div class="col-md-2 socneticon">
-          <a href="https://www.linkedin.com/in/steven-peters-9b7341121">
-            <img class="img-responsive" src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png">
-          </a>
-        </div>
-      </div>
-    </div>
-
 
   </body>
 </html>

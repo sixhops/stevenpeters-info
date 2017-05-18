@@ -9,6 +9,12 @@ h1 {
 	color: #c5c5c5;
 }
 
+h2 {
+  font-size: 4rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #c5c5c5;
+}
+
 p {
 	font-size: 1.4rem;
 	font-family: 'Open Sans', sans-serif;
@@ -28,6 +34,11 @@ i {
 	margin-bottom: 0.6rem;
 }
 
+div {
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .heading {}
 
 .bio {
@@ -35,30 +46,51 @@ i {
   padding-right: 0;
 }
 
-.skillbox {
+.description {
   background-color: #222;
   opacity: 0.85;
   margin-top: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0.25rem 0.25rem 1rem #000000;
+  text-align: justify;
 }
 
-.logobox {
-  background-color: #fff;
-  margin-top: 1.6em;
+.skillbox {
+  background-color: #000;
+  margin-top: 1.0em;
   margin-left: 0.3em;
   margin-right: 0.3em;
-  margin-bottom: 0.3em;
+  margin-bottom: 1.0em;
   opacity: 1;
 }
 
-.logobox div div {
-	border-radius: 1em;
-	
+.skilllistdiv {
+  background-color: gray;
+  text-align: left;
+  position: relative;
+}
+
+.skilllistdiv ul {
+  margin: 0;
+  padding: 0;
+}
+
+.skilllistdiv ul li {
+  position: relative;
+}
+
+.resumelink {
+  background-color: silver;
+  margin: 0.25em;
+}
+
+.resumelink p {
+  color: black;
+  padding: 1em;
 }
 
 .portfolio {
@@ -97,23 +129,4 @@ i {
 
 .sitedescription {
   font-size: 1em;
-}
-
-.contactheader {
-  color: #fff;
-}
-
-.socnetrow {
-  background-color: #fff;
-  border-radius: 1em;
-  margin-bottom: 1em;
-}
-
-.socneticon {
-  
-}
-
-.facebooklogo {
-  margin: 1.9em;
-  max-height: 8em;
 }
