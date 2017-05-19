@@ -15,16 +15,22 @@ h2 {
   color: #c5c5c5;
 }
 
-p {
+p, li {
 	font-size: 1.4rem;
 	font-family: 'Open Sans', sans-serif;
-	color: #c5c5c5;
+	color: #fff;
+}
+
+a {
+  color: #fff;
 }
 
 body {
-  background-color: #000;
+  background-color: rgba(0, 0, 210, 0.3);
   background-image: url("/images/background.jpg");
+  /* background-image: url("background.jpg"); */
   background-attachment: fixed;
+  background-blend-mode: lighten;
 }
 
 i {
@@ -39,7 +45,9 @@ div {
   box-sizing: border-box;
 }
 
-.heading {}
+.socnet {
+  font-size: 2rem;
+}
 
 .bio {
   padding-left: 0;
@@ -60,22 +68,23 @@ div {
 }
 
 .skillbox {
-  background-color: #000;
-  margin-top: 1.0em;
+  margin-top: 0.8em;
   margin-left: 0.3em;
   margin-right: 0.3em;
-  margin-bottom: 1.0em;
-  opacity: 1;
+  margin-bottom: 0.8em;
+
+  background-color: rgba(17, 17, 17, 0.6);
 }
 
 .skilllistdiv {
-  background-color: gray;
+  /* background-color: #111; */
   text-align: left;
   position: relative;
+  overflow: hidden;
 }
 
 .skilllistdiv ul {
-  margin: 0;
+  margin: 1em;
   padding: 0;
 }
 
@@ -85,7 +94,16 @@ div {
 
 .resumelink {
   background-color: silver;
-  margin: 0.25em;
+  margin-top: 0.25em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-bottom: 0.75em;
+  border-radius: 0.2em;
+  box-shadow: 0 0 1em #ccc inset;
+}
+
+.resumelink:hover {
+  box-shadow: 0 0 1em #fff inset;
 }
 
 .resumelink p {
@@ -94,29 +112,27 @@ div {
 }
 
 .portfolio {
-  background-color: #fff;
+  background: rgba(0, 190, 0, 0.5); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(180deg, rgba(0,190,0,0),rgba(0,190,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(180deg, rgba(0,190,0,0),rgba(0,190,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(180deg, rgba(0,190,0,0),rgba(0,190,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(180deg, rgba(0,190,0,0), rgba(0,190,0,1)); /*Standard*/
 }
 
-#seattlebmxbox {
-  /*
-  padding: 1em;
-  margin: 1em;
-  */
+.portfolio h2 {
+  color: #fff;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.8em;
 }
 
-#seattlebmximagebox {
-  background-image: url("http://seattlebmx.bike/images/chalkboard.png");
-  background-position: center;
-  padding: 1em;
-  /*margin: 1em;*/
-}
 
 #bahiainmotionbox {
   /*padding: 1em;*/
 }
 
 #bahiainmotionbox img {
-  height: 14em;
+  height: 10em;
+  border: 0.25em solid #000;
 }
 
 #balanceseattlebox {
@@ -124,7 +140,16 @@ div {
 }
 
 #balanceseattlebox img {
-  border: 2em solid #ccc;
+  border: 0.25em solid #000;
+}
+
+#cullengraymusicbox {
+
+}
+
+#cullengraymusicbox img {
+  height: 10em;
+  border: 0.25em solid #000;
 }
 
 .sitedescription {

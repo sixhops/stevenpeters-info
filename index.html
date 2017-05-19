@@ -13,38 +13,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-    <script src="https://use.fontawesome.com/f209cde02b.js"></script>
-
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
     <script src="js/app.js"></script>
     -->
-
-    <script>
-    	var lastScrollTop = 0;
-    	var thisScrollTop = 0;
-    	var delta = 0;
-
-      var listitems = document.getElementsByClassName("staggeredlist");
-      var left = 1;
-
-    	$(document).ready(function() {
-  			$(window).scroll(function() {
-    			thisScrollTop = $(window).scrollTop();
-    			delta = thisScrollTop - lastScrollTop;
-    			$(".parallax").css({ 'transform' : 'translateY(' + (delta / 2.5) + 'px)' });
-  			});
-
-        for (var i = 0; i < listitems.length; i++) {
-          listitems[i].style.left = left + "px";
-          left += 10;
-        }
-		  });
-
-    </script>
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,12 +32,12 @@
     	<div class="row">
         <div class="col-xs-12">
     			<h1 class="text-center parallax">steven peters</h1>
-    			<p class="text-center parallax">
-    				<i class="fa fa-lg fa-github" aria-hidden="true"></i>
-    				<i class="fa fa-lg fa-codepen" aria-hidden="true"></i>
-    				<i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i>
-    				<i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i>
-    				<i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
+    			<p class="text-center parallax socnet">
+    				<a target="_blank" href="https://github.com/sixhops/"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
+    				<a target="_blank" href="http://codepen.io/sixhops/"><i class="fa fa-lg fa-codepen" aria-hidden="true"></i></a>
+    				<a target="_blank" href="https://www.linkedin.com/in/steven-peters-9b7341121/"><i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i></a>
+    				<a target="_blank" href="https://www.facebook.com/sixhops"><i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i></a>
+    				<a target="_blank" href="https://twitter.com/sixhops"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
     			</p>
         </div>
     	</div>
@@ -85,13 +57,22 @@
     <div class="container-fluid skillbox">
       <div class="row">
           <div class="hidden-xs col-md-3"><p></p></div>
-          <div class="col-xs-12 col-md-6 skilllistdiv">
+          <div class="col-md-3 skilllistdiv">
             <ul>
-              <li class="staggeredlist">Front-end Web Development (HTML/CSS/JS)</li>
-              <li class="staggeredlist">Diverse language experience (C#, Java, C++, etc.)</li>
-              <li class="staggeredlist">Experience managing every phase of software development</li>
-              <li class="staggeredlist">Exceptional communication skills</li>
-              <li class="staggeredlist">Experienced trainer in audio, video and classroom environments</li>
+              <li class="staggeredlist">Front-end Web Development</li>
+              <li class="staggeredlist">Diverse programming background</li>
+              <li class="staggeredlist">SQL database administration</li>
+              <li class="staggeredlist">Windows and Unix proficient</li>
+              <li class="staggeredlist">Boardgame enthusiast</li>
+            </ul>
+          </div>
+          <div class="col-md-3 skilllistdiv">
+            <ul>
+              <li class="staggeredlist">Software development and testing</li>
+              <li class="staggeredlist">Software project management</li>
+              <li class="staggeredlist">Experienced trainer in varied media</li>
+              <li class="staggeredlist">Exceptional communicator</li>
+              <li class="staggeredlist">Dog lover</li>
             </ul>
           </div>
           <div class="hidden-xs col-md-3"><p></p></div>
@@ -131,17 +112,67 @@
         <div class="col-md-4">
           <div id="bahiainmotionbox">
             <img class="img-responsive center-block" src="http://bahiainmotion.com/wp-content/uploads/2016/06/BIM_logo_final.png">
-            <p class="text-center sitedescription">A site for the Balance Studio parent company designed in Wordpress to give the owner an easier way to edit content.</p>
+            <p class="text-center sitedescription">A site for the Balance Studio parent company designed in WordPress to give the owner an easier way to edit content.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div id="cullengraymusicbox">
-            <img class="img-responsive center-block" src="http://seattlebmx.bike/images/mainlogo.png">
+            <img class="img-responsive center-block" src="/images/cullenlogo.png">
             <p class="text-center sitedescription">Another handcoded HTML and CSS solution for an artist's first album.</p>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div id="githubbox">
+            <h2>github</h2>
+            <p><a target="_blank" href="http://htmlpreview.github.io/?https://github.com/sixhops/js-calculator/blob/master/index.html">JS Calculator project (FreeCodeCamp)</a></p>
+            <p><a target="_blank" href="https://github.com/sixhops/">Project 2</a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="codepenbox">
+            <h2>codepen</h2>
+            <p><a target="_blank" href="http://codepen.io/sixhops/pen/KNZqeE">Local Weather project (FreeCodeCamp)</a></p>
+            <p><a target="_blank" href="http://codepen.io/sixhops/pen/MbXVaJ">Wikipedia Viewer project (FreeCodeCamp)</a></p>
+            <p><a target="_blank" href="http://codepen.io/sixhops/pen/ZLLdrE">TwitchTV Userlist project (FreeCodeCamp)</a></p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/f209cde02b.js"></script>
+
+    <script>
+      var lastScrollTop = 0;
+      var thisScrollTop = 0;
+      var delta = 0;
+
+      var listitems = document.getElementsByClassName("staggeredlist");
+      var left = 18;
+
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          thisScrollTop = $(window).scrollTop();
+          delta = thisScrollTop - lastScrollTop;
+          $(".parallax").css({ 'transform' : 'translateY(' + (delta / 2.5) + 'px)' });
+        });
+
+        for (var i = 0; i < listitems.length; i++) {
+          listitems[i].style.left = left + "px";
+          if (i == 4) {
+            left = 18; // reset for the second div
+          } else {
+            left += 8;
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>
