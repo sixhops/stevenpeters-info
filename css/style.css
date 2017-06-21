@@ -6,19 +6,27 @@ html, body {
 h1 {
 	font-size: 6rem;
 	font-family: 'Goudy Bookletter 1911', serif;
-	color: #c5c5c5;
+	color: #fff;
 }
 
 h2 {
   font-size: 4rem;
   font-family: 'Goudy Bookletter 1911', serif;
-  color: #c5c5c5;
+  color: #fff;
 }
 
 p, li {
 	font-size: 1.4rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
+}
+
+p.larger {
+  font-size: 2.0rem;
+}
+
+p.smaller {
+  font-size: 1.2rem;
 }
 
 a {
@@ -111,6 +119,10 @@ div {
   padding: 1em;
 }
 
+.resumelink a {
+  color: black;
+}
+
 .portfolio {
   background: rgba(0, 190, 0, 0.5); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(180deg, rgba(0,190,0,0),rgba(0,190,0,1)); /*Safari 5.1-6*/
@@ -124,7 +136,6 @@ div {
   letter-spacing: 0.12em;
   margin-bottom: 0.8em;
 }
-
 
 #bahiainmotionbox {
   /*padding: 1em;*/
@@ -140,6 +151,7 @@ div {
 }
 
 #balanceseattlebox img {
+  height: 10em;
   border: 0.25em solid #000;
 }
 
@@ -150,8 +162,4 @@ div {
 #cullengraymusicbox img {
   height: 10em;
   border: 0.25em solid #000;
-}
-
-.sitedescription {
-  font-size: 1em;
 }

@@ -13,11 +13,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-    <script src="js/app.js"></script>
-    -->
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,15 +76,11 @@
 
     <div class="container-fluid resumes">
       <div class="row">
-        <div class="hidden-xs col-md-2"><p></p></div>
-        <div class="col-xs-6 col-md-3">
-          <div class="resumelink"><p>Download my resume file (.doc)</p></div>
+        <div class="col-xs-2 col-md-4"><p></p></div>
+        <div class="col-xs-8 col-md-4">
+          <div class="resumelink"><p><a href="/resume.docx">Download my resume file (.docx)</a></p></div>
         </div>
-        <div class="hidden-xs col-md-2"><p></p></div>
-        <div class="col-xs-6 col-md-3">
-          <div class="resumelink"><p>View my expanded resume online</p></div>
-        </div>
-        <div class="hidden-xs col-md-2"><p></p></div>
+        <div class="col-xs-2 col-md-4"><p></p></div>
       </div>
     </div>
 
@@ -98,27 +89,27 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center">portfolio</h2>
+          <h2 class="text-center">portfolio (evergrowing)</h2>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <div id="balanceseattlebox">
-            <img class="img-responsive center-block" src="http://balanceseattle.com/images/balance_logo.jpg">
-            <p class="text-center sitedescription">A handcoded HTML, CSS, and JS solution for a dance/wellness studio.</p>
+            <a target="_blank" href="http://balanceseattle.com/"><img class="img-responsive center-block" src="http://balanceseattle.com/images/balance_logo.jpg" /></a>
+            <p class="text-center smaller">A handcoded HTML, CSS, and JS solution for a dance/wellness studio.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div id="bahiainmotionbox">
-            <img class="img-responsive center-block" src="http://bahiainmotion.com/wp-content/uploads/2016/06/BIM_logo_final.png">
-            <p class="text-center sitedescription">A site for the Balance Studio parent company designed in WordPress to give the owner an easier way to edit content.</p>
+            <a target="_blank" href="http://bahiainmotion.com/"><img class="img-responsive center-block" src="http://bahiainmotion.com/wp-content/uploads/2016/06/BIM_logo_final.png" /></a>
+            <p class="text-center smaller">A site for the Balance Studio parent company designed in WordPress to give the owner an easier way to edit content.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div id="cullengraymusicbox">
-            <img class="img-responsive center-block" src="/images/cullenlogo.png">
-            <p class="text-center sitedescription">Another handcoded HTML and CSS solution for an artist's first album.</p>
+            <a target="_blank" href="/cgm/"><img class="img-responsive center-block" src="/images/cullenlogo.png" /></a>
+            <p class="text-center smaller">Another handcoded HTML and CSS solution for an artist's first album.</p>
           </div>
         </div>
       </div>
@@ -127,16 +118,21 @@
         <div class="col-md-6">
           <div id="githubbox">
             <h2>github</h2>
-            <p><a target="_blank" href="http://htmlpreview.github.io/?https://github.com/sixhops/js-calculator/blob/master/index.html">JS Calculator project (FreeCodeCamp)</a></p>
-            <p><a target="_blank" href="https://github.com/sixhops/">Project 2</a></p>
+            <p class="larger">Giphy API with Angular</p>
+            <p><a target="_blank" href="http://htmlpreview.github.io/?https://github.com/sixhops/angular-giphy/blob/master/index.html">demo link</a> *
+            <a target="_blank" href="https://github.com/sixhops/angular-giphy/">project source</a></p>
+
+            <p class="larger">JS Calculator project in progress (FreeCodeCamp)</p>
+            <p><a target="_blank" href="http://htmlpreview.github.io/?https://github.com/sixhops/js-calculator/blob/master/index.html">demo link</a> *
+            <a target="_blank" href="https://github.com/sixhops/js-calculator/">project source</a></p>
           </div>
         </div>
         <div class="col-md-6">
           <div id="codepenbox">
             <h2>codepen</h2>
-            <p><a target="_blank" href="http://codepen.io/sixhops/pen/KNZqeE">Local Weather project (FreeCodeCamp)</a></p>
-            <p><a target="_blank" href="http://codepen.io/sixhops/pen/MbXVaJ">Wikipedia Viewer project (FreeCodeCamp)</a></p>
-            <p><a target="_blank" href="http://codepen.io/sixhops/pen/ZLLdrE">TwitchTV Userlist project (FreeCodeCamp)</a></p>
+            <p class="larger"><a target="_blank" href="http://codepen.io/sixhops/pen/KNZqeE">Local Weather project (FreeCodeCamp)</a></p>
+            <p class="larger"><a target="_blank" href="http://codepen.io/sixhops/pen/MbXVaJ">Wikipedia Viewer project (FreeCodeCamp)</a></p>
+            <p class="larger"><a target="_blank" href="http://codepen.io/sixhops/pen/ZLLdrE">TwitchTV Userlist project (FreeCodeCamp)</a></p>
           </div>
         </div>
       </div>
@@ -144,7 +140,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="https://use.fontawesome.com/f209cde02b.js"></script>
 
